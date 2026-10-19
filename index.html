@@ -13,17 +13,20 @@
       box-sizing: border-box;
     }
 
+  
     body {
       margin: 0;
       min-height: 100vh;
       padding: 28px 16px;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      justify-content: flex-start;
       align-items: center;
       background: #17191C;
       color: #E8E8E8;
       font-family: Arial, Helvetica, sans-serif;
     }
+
 
     .card {
       width: 100%;
@@ -109,6 +112,43 @@
       color: #8F99A5;
       font-size: 11px;
     }
+    
+    /* Sezione partner e aziende collaboratrici */
+    .partners {
+      width: 100%;
+      max-width: 420px;
+      margin: 24px auto 0;
+      padding: 22px 20px;
+      background: #22262B;
+      border: 1px solid #343A42;
+      border-radius: 16px;
+      text-align: center;
+    }
+
+    .partners h2 {
+      margin: 0 0 20px;
+      color: #E8E8E8;
+      font-size: 16px;
+      line-height: 1.4;
+      font-weight: 600;
+    }
+
+    .partner-logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px 16px;
+    }
+
+    .partner-logos img {
+      display: block;
+      width: 140px;
+      max-width: 100%;
+      height: 75px;
+      object-fit: contain;
+    }
+
   </style>
 </head>
 
@@ -149,5 +189,18 @@
       Andrea Pinna srl · Biglietto da visita digitale
     </div>
   </main>
+  
+  <section class="partners">
+    <h2>Partner e aziende collaboratrici</h2>
+
+    <div class="partner-logos">
+      <img src="partner1.png" alt="VetroPack.png">
+      <img src="partner2.png" alt="IPS.png">
+      <img src="partner3.png" alt="GiBi.png">
+      <img src="partner4.png" alt="NiroLabel.png">
+      <img src="partner5.png" alt="Relife.png">
+    </div>
+  </section>
+
 </body>
 </html>
